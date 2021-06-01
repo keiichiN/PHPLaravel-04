@@ -1,39 +1,35 @@
 <?php
 
 //1
-function sum($bai){
-$result =  $bai * 2 ;
-return $result ;
+function double($num){
+ return $num * 2 ;
 }
-echo sum(100);
+echo double(100);
 
 //2
 function add($a,$b){
-  $result = 0;
-  $result = $a + $b ;
-return $result;
+ return $a + $b ;
 }
 echo add(2,5);
 
 //3
 function kake($arr) {
-    $result = 1;
-    foreach($arr as $a) {
-        $result *= $a;
+ $result = 1;
+ foreach($arr as $a) {
+  $result *= $a;
     }
-        return $result;
+return $result;
 }
 echo kake(array(1, 3, 5, 7, 9));
 
 //4
-  function max_array($arr){
- $max_number = $arr[0];
- foreach($arr as $a){
+ function max_array($arr){
+  $max_number = $arr[0];
+  foreach($arr as $a){
    if ($max_number < $a) {
-     $max_number = $a;
+    $max_number = $a;
    }
  }
-$max_number < $a;
  return $max_number;
   }
 echo max_array([5, 2, 12, 6, 7]);
@@ -48,18 +44,16 @@ echo strip_tags($AB);
 $snack = array("choco", "cake");
 array_push($snack,"okaki", "apple");
 print_r($snack);
-?>
+
 
 //array_merge
-<?php
 $array1 = array();
 $array2 = array(1 => "data");
 $result = array_merge($array1, $array2);
 print_r($result);
-?>
+
 
 //time, mktime
-<?php
   $time = mktime(9);
   var_dump(date('Y年m月d日h時i分s秒', $time));
   print('<br/>');
@@ -68,3 +62,5 @@ print_r($result);
 date_default_timezone_set('UTC');
 echo date("l");
 echo date('l jS \of F Y h:i:s A');
+
+?>
